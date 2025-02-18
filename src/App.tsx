@@ -93,7 +93,7 @@ const FooterComponent = () => (
             </li>
             <li>
               <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                Asesoría en Marketing
+                Asesoría en 
               </Link>
             </li>
           </ul>
@@ -199,7 +199,14 @@ const HomeComponent = () => (
             <div className="relative z-10">
               <Globe2 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Publicidad Digital</h3>
-              <p className="text-[rgba(254,255,254,255)]-600 mb-6">Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.</p>
+              <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
+                textShadow: `
+                    -1px -1px 0 #ffffff,
+                    1px -1px 0 #ffffff,
+                    -1px 1px 0 #ffffff,
+                    1px 1px 0 #ffffff
+                `
+            }}>Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.</p>
               <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
                 <span>Ver Más</span>
                 <ArrowRight className="h-4 w-4" />
@@ -216,7 +223,14 @@ const HomeComponent = () => (
             <div className="relative z-10">
               <PenTool className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Desarrollo Web</h3>
-              <p className="text-[rgba(254,255,254,255)]-600 mb-6">Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.</p>
+              <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
+                textShadow: `
+                    -1px -1px 0 #ffffff,
+                    1px -1px 0 #ffffff,
+                    -1px 1px 0 #ffffff,
+                    1px 1px 0 #ffffff
+                `
+            }}>Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.</p>
               <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
                 <span>Ver Más</span>
                 <ArrowRight className="h-4 w-4" />
@@ -232,8 +246,15 @@ const HomeComponent = () => (
         ></div>
         <div className="relative z-10">
           <BarChart3 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
-          <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Asesoría en Marketing</h3>
-          <p className="text-black-600 mb-6">Orientación experta para ayudarte a tomar decisiones informadas de marketing.</p>
+          <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]" >Asesoría en Marketing</h3>
+          <p className="text-black-600 mb-6 text-lg" style={{
+                textShadow: `
+                    -1px -1px 0 #ffffff,
+                    1px -1px 0 #ffffff,
+                    -1px 1px 0 #ffffff,
+                    1px 1px 0 #ffffff
+                `
+            }}>Orientación experta para ayudarte a tomar decisiones informadas de marketing.</p>
           <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
             <span>Ver Más</span>
             <ArrowRight className="h-4 w-4" />
