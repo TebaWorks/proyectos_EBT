@@ -27,7 +27,7 @@ const HeaderComponent = () => (
           <img 
             src="/ebt-media-logo.png" 
             alt="EBT Media Logo"
-            className="w-auto object-contain max-h-20"
+            className="h-full w-auto object-contain"
           />
         </Link>
         <div className="hidden md:flex space-x-8">
