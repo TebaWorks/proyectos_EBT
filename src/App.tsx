@@ -13,21 +13,21 @@ const WhatsAppBubbleComponent = () => (
     <img 
       src="/whatsapp-logo.png" 
       alt="WhatsApp"
-      className="w-12 h-12"
+      className="w-10 h-10"
     />
     <span className="absolute -top-2 -right-2 bg-[rgb(234,38,48)] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
   </a>
 );
 
 const HeaderComponent = () => (
-  <header className="fixed w-full bg-[rgb(41,77,154)] shadow-md z-50">
-    <nav className="container mx-auto px-6">
-      <div className="flex items-center justify-between h-20">
+  <header className="fixed w-full bg-[rgb(41,77,154)] shadow-md z-50 pt-1 pb-1"> {/* Reducir el padding */}
+    <nav className="container mx-auto px-8"> 
+      <div className="flex items-center justify-between h-full">
         <Link to="/" className="flex items-center h-full py-2">
           <img 
             src="/ebt-media-logo.png" 
             alt="EBT Media Logo"
-            className="h-full w-auto object-contain"
+            className="h-24 w-auto object-contain" // Mantener el tamaño del logo
           />
         </Link>
         <div className="hidden md:flex space-x-8">
@@ -163,7 +163,7 @@ const HomeComponent = () => (
           opacity: 0.3
         }}
       ></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 mt-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-8 leading-tight">Transforma tu Presencia Digital</h1>
           <p className="text-xl mb-10">Ayudamos a empresas a crecer a través de soluciones estratégicas de marketing digital.</p>
@@ -191,7 +191,7 @@ const HomeComponent = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
             <div 
-              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-30 group-hover:opacity-65"
+              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50"
               style={{
                 backgroundImage: 'url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015")'
               }}
@@ -199,7 +199,7 @@ const HomeComponent = () => (
             <div className="relative z-10">
               <Globe2 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Publicidad Digital</h3>
-              <p className="text-gray-600 mb-6">Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.</p>
+              <p className="text-[rgba(254,255,254,255)]-600 mb-6">Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.</p>
               <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
                 <span>Ver Más</span>
                 <ArrowRight className="h-4 w-4" />
@@ -208,7 +208,7 @@ const HomeComponent = () => (
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
             <div 
-              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-30 group-hover:opacity-65"
+               className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50"
               style={{
                 backgroundImage: 'url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070")'
               }}
@@ -216,7 +216,7 @@ const HomeComponent = () => (
             <div className="relative z-10">
               <PenTool className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Desarrollo Web</h3>
-              <p className="text-gray-600 mb-6">Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.</p>
+              <p className="text-[rgba(254,255,254,255)]-600 mb-6">Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.</p>
               <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
                 <span>Ver Más</span>
                 <ArrowRight className="h-4 w-4" />
@@ -224,22 +224,22 @@ const HomeComponent = () => (
             </div>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
-            <div 
-              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-30 group-hover:opacity-65"
-              style={{
-                backgroundImage: 'url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070")'
-              }}
-            ></div>
-            <div className="relative z-10">
-              <BarChart3 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Asesoría en Marketing</h3>
-              <p className="text-white-600 mb-6">Orientación experta para ayudarte a tomar decisiones informadas de marketing.</p>
-              <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
-                <span>Ver Más</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50" // Cambiar la opacidad inicial a 100%
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070")'
+          }}
+        ></div>
+        <div className="relative z-10">
+          <BarChart3 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
+          <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Asesoría en Marketing</h3>
+          <p className="text-black-600 mb-6">Orientación experta para ayudarte a tomar decisiones informadas de marketing.</p>
+          <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
+            <span>Ver Más</span>
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+</div>
         </div>
       </div>
     </section>
@@ -291,7 +291,7 @@ const HomeComponent = () => (
 const AboutComponent = () => (
   <div className="pt-32 pb-24 bg-[rgb(254,255,254)] text-[rgb(41,77,154)]">
     <div className="container mx-auto px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto mt-8">
         <h1 className="text-4xl font-bold mb-10 text-[rgb(41,77,154)] text-center">Sobre EBT Media</h1>
         <div className="relative mb-12">
           <img 
@@ -358,7 +358,7 @@ const AboutComponent = () => (
 
 const ServicesComponent = () => (
   <div className="pt-32 pb-24 bg-[rgb(254,255,254)] text-[rgb(41,77,154)]">
-    <div className="container mx-auto px-6">
+    <div className="container mx-auto px-6 mt-8">
       <h1 className="text-4xl font-bold text-center mb-16 text-[rgb(41,77,154)]">Nuestros Servicios</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-all relative overflow-hidden group">
@@ -485,7 +485,7 @@ const ContactComponent = () => {
   return (
     <div className="pt-32 pb-24 bg-[rgb(254,255,254)] text-[rgb(41,77,154)]">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto mt-8">
           <h1 className="text-4xl font-bold text-center mb-16 text-[rgb(41,77,154)]">Contáctanos</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
