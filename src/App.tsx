@@ -191,75 +191,129 @@ const HomeComponent = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
             <div 
-              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50"
+              className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-60"
               style={{
                 backgroundImage: 'url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015")'
               }}
             ></div>
-            <div className="relative z-10">
-              <Globe2 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Publicidad Digital</h3>
-              <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
-                textShadow: `
-                    -1px -1px 0 #ffffff,
-                    1px -1px 0 #ffffff,
-                    -1px 1px 0 #ffffff,
-                    1px 1px 0 #ffffff
-                `
-            }}>Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.</p>
-              <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
-                <span>Ver Más</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+            <div className="relative z-10 flex flex-col items-center text-center">
+    <Globe2 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
+    <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Publicidad Digital
+    </h3>
+    <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Campañas estratégicas en Google y Meta para alcanzar a tu público objetivo.
+    </p>
+    <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
+        <span style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>Ver Más</span>
+        <ArrowRight className="h-4 w-4" />
+    </Link>
+</div>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
             <div 
-               className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50"
+               className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-60"
               style={{
                 backgroundImage: 'url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070")'
               }}
             ></div>
-            <div className="relative z-10">
-              <PenTool className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]">Desarrollo Web</h3>
-              <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
-                textShadow: `
-                    -1px -1px 0 #ffffff,
-                    1px -1px 0 #ffffff,
-                    -1px 1px 0 #ffffff,
-                    1px 1px 0 #ffffff
-                `
-            }}>Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.</p>
-              <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
-                <span>Ver Más</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+            <div className="relative z-10 flex flex-col items-center text-center">
+    <PenTool className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
+    <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Desarrollo Web
+    </h3>
+    <p className="text-[rgba(254,255,254,255)]-600 mb-6 text-lg" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Sitios web personalizados construidos en un mes, diseñados para convertir visitantes en clientes.
+    </p>
+    <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
+        <span style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>Ver Más</span>
+        <ArrowRight className="h-4 w-4" />
+    </Link>
+</div>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all group relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-50" // Cambiar la opacidad inicial a 100%
+          className="absolute inset-0 bg-cover bg-center z-0 transition-opacity opacity-20 group-hover:opacity-60" // Cambiar la opacidad inicial a 100%
           style={{
             backgroundImage: 'url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2070")'
           }}
         ></div>
-        <div className="relative z-10">
-          <BarChart3 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
-          <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]" >Asesoría en Marketing</h3>
-          <p className="text-black-600 mb-6 text-lg" style={{
-                textShadow: `
-                    -1px -1px 0 #ffffff,
-                    1px -1px 0 #ffffff,
-                    -1px 1px 0 #ffffff,
-                    1px 1px 0 #ffffff
-                `
-            }}>Orientación experta para ayudarte a tomar decisiones informadas de marketing.</p>
-          <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
-            <span>Ver Más</span>
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <div className="relative z-10 flex flex-col items-center text-center">
+    <BarChart3 className="h-14 w-14 text-[rgb(41,77,154)] mb-6" />
+    <h3 className="text-2xl font-bold mb-4 text-[rgb(41,77,154)]" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Asesoría en Marketing
+    </h3>
+    <p className="text-black-600 mb-6 text-lg" style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>
+        Orientación experta para ayudarte a tomar decisiones informadas de marketing.
+    </p>
+    <Link to="/services" className="text-[rgb(41,77,154)] flex items-center space-x-2 hover:text-[rgb(41,77,154)] font-medium">
+        <span style={{
+        textShadow: `
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff
+        `
+    }}>Ver Más</span>
+        <ArrowRight className="h-4 w-4" />
+    </Link>
+</div>
 </div>
         </div>
       </div>
